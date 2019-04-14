@@ -85,6 +85,9 @@ class Game extends React.Component  {
   }
   
   checkMatch(character)  {
+    if(typeof this.state.word === 'undefined')	{
+	return [false, -1];
+    }
     let i;
     let match = false;
     for(i=0; i<4; i++)  {
