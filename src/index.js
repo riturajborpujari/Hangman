@@ -26,7 +26,7 @@ class UI extends React.Component  {
 	  <p class="tagline">The classic word guessing game</p>
 	  <p class="info">Try to guess the randomly selected four letter word character by character
 	    . If you guess a letter that is in the secret word we have selected, then that letter 
-	    and its position in the word will be show below. <br/> You have 5 chances to win...
+	    and its position in the word will be show below. <br/> You have 10 chances to win...
 	  </p>
 	</div>
         <div>
