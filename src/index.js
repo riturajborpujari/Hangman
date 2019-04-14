@@ -71,7 +71,7 @@ class Game extends React.Component  {
       status  : "Try guessing different characters in the input box...",
       word    : ChooseRandomWord(),
       dispWord: ['_', '_', '_', '_'],
-      numChances: 5
+      numChances: 10
     };
   }
   
@@ -80,7 +80,7 @@ class Game extends React.Component  {
       status  : "Try guessing different characters in the input box...",
       word    : ChooseRandomWord(),
       dispWord: ['_', '_', '_', '_'],
-      numChances: 5
+      numChances: 10
     });
   }
   
@@ -167,7 +167,8 @@ class Game extends React.Component  {
     if(gState === 1)
       status = "Congrats! You are the winner!!!";
     else if(gState === -1) 
-      status = "Alas! You lose!!! Click new game button to start again.";
+      status = "Alas! You lose!!! Click new game button to start again. The correct \
+	letter sequence was: " + this.state.word;
     
     
     return (
